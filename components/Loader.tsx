@@ -1,20 +1,18 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image'
 
 const Loader = () => {
   return (
     <div className="loader">
-      <Image
+      <Image 
         src="/assets/icons/loader.svg"
-        alt="Loader"
+        alt="loader"
         width={32}
         height={32}
         className="animate-spin"
       />
       Loading...
-      <div className="loader__spinner"></div>
     </div>
-  );
-};
+  )
+}
 
-export default Loader;
+export default Loader
