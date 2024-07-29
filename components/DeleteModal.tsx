@@ -81,3 +81,5 @@ export const DeleteModal = ({ roomId }: DeleteModalProps) => {
     </Dialog>
   );
 };
+
+export default DeleteModal;
