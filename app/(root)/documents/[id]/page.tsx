@@ -1,7 +1,7 @@
-import CollabrativeRoom from "@/components/CollabrativeRoom";
+import CollaborativeRoom from "@/components/CollabrativeRoom";
 import { getDocument } from "@/lib/actions/room.actions";
 import { getClerkUsers } from "@/lib/actions/users.actions";
-import { currentUser } from "@clerk/nextjs/server";
+import { currentUser } from "@clerk/nextjs/server"
 import { redirect } from "next/navigation";
 
 const Document = async ({ params: { id } }: SearchParamProps) => {
@@ -29,7 +29,7 @@ const Document = async ({ params: { id } }: SearchParamProps) => {
 
   return (
     <main className="flex w-full flex-col items-center">
-      <CollabrativeRoom 
+      <CollaborativeRoom 
         roomId={id}
         roomMetadata={room.metadata}
         users={usersData}
